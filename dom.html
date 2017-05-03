@@ -1,0 +1,34 @@
+<html>
+<head>
+<script type="text/javascript">
+function callme()
+{
+document.getElementById("D1").style.backgroundColor="violet";
+}
+function callme1()
+{
+var a=document.getElementsByClassName("C1");
+a[0].style.color="green";
+a[0].style.fontSize="20px";
+a[1].style.fontWeight="Bold";
+}
+function callme2()
+{
+var b=document.getElementsByTagName("H1");
+b[0].style.backgroundColor="red";
+b[1].style.backgroundColor="green";
+}
+</script>
+</head>
+<body>
+<h2>click the box to change the violet color</h2>
+<div id="D1" style="background-color:red; height:100px; width:100px" onclick="callme()"></div>
+click me button some change in orange and yellow box
+<div class="C1" style="background-color:orange; height:100px; width:100px;" >Good</div>
+<div class="C1" style="background-color:yellow; height:100px; width:100px;" >Morning</div>
+<input type="button" value="Click Me!" onclick="callme1()"/>
+<h2>move the mouse to ramsource text</h2>
+<h1 id="r1" onmouseover="callme2()"> RamSource </h1>
+<h1 id="r2" onmouseover="callme2()"> Stick To Basics </h1>
+</body>
+</html>
